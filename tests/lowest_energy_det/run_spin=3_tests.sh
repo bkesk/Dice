@@ -74,7 +74,7 @@ mv shci.e _energies/${IRREP}_energy.e
 
 done
 
-python compare_energies.py pyscf_energies_spin=$SPIN.csv 1e-6 
+python3 compare_energies.py pyscf_energies_spin=$SPIN.csv 1e-6 
 
 rm -rf _inputs _energies _outputs
 rm -f *.dat *.bkp *.txt rm tmp*
