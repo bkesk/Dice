@@ -7,6 +7,7 @@
 *.o
 *.so
 Dice
+ZDice2
 
 # Packages #
 ############
@@ -36,6 +37,7 @@ tests/*/spatial1RDM.*.txt
 tests/*/spatial3RDM.*.txt
 tests/*/spatial3RDM.*.bin
 tests/*/spin1RDM.*.txt
+tests/lowest_energy_det/*.sh
 tests/__pycache__
 benchmark/*/shci.e
 benchmark/*/output.dat
