@@ -442,6 +442,10 @@ int main(int argc, char* argv[]) {
           double parity = getParityForDiceToAlphaBeta(SHMDets[m]);
           double wciCoeff = parity * std::real(prevci(m, 0));
           fout.write((char*) &wciCoeff, sizeof(double));
+          #ifdef Complex
+              wciCoeff = parity * std::imag(prevci(m, 0));
+              fout.write((char*) &wciCoeff, sizeof(double));
+          #endif
           Determinant wdet = SHMDets[m];
           char det[norbs];
           wdet.getRepArray(det);
