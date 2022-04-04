@@ -447,7 +447,7 @@ double SHCIbasics::DoPerturbativeStochastic2SingleListDoubleEpsilon2AllTogether(
       break;
     }
   }
-  return AvgenergyEN;
+  return E0 + AvgenergyEN;
 }
 
 double SHCIbasics::DoPerturbativeDeterministic(
