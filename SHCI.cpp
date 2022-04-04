@@ -702,7 +702,7 @@ root1, Heff(root1,root1), Heff(root2, root2), Heff(root1, root2), spinRDM);
       if (schd.doSOC) {
         for (int j = 0; j < E0.size(); j++)
           pout << str(boost::format("State: %3d,  E: %18.10f, dE: %10.2f\n") %
-                      j % (ePT[j]) % ((ePT[j] - ePT[0]) * 219470));
+                      j % (ePT[j] + E0[j]) % ((ePT[j] + E0[j] - ePT[0]) * 219470));
       }
     }  // end if iter!=0
   } else {
